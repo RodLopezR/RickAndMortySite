@@ -1,0 +1,32 @@
+{
+  "types": {
+    "feat": "a new feature",
+    "docs": "documentation only changes",
+    "fix": "a bug fix",
+    "style": "changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+    "refactor": "a code change that neither fixes a bug nor adds a feature",
+    "test": "adding missing tests or correcting existing ones",
+    "perf": "a code change that improves performance",
+    "ci": "changes to your CI configuration files and scripts",
+    "temp": "temporary commit that won't be included in your CHANGELOG",
+    "chore": "changes to the build process or auxiliary tools and libraries such as documentation generation"
+  },
+  "min-len": 10,
+  "max-len": 100,
+  "example": "feat: Nueva funcionalidad",
+  "scopeDescriptions": [
+    "Optional, can be anything specifying the place of the commit change.",
+    "For example $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView, etc.",
+    "In App Development, scope can be a page, a module or a component."
+  ],
+  "invalidScopeDescriptions": ["`scope` invalidScopeDescriptions"],
+  "subjectDescriptions": [
+    "A very short description of the change in one line."
+  ],
+  "invalidSubjectDescriptions": [
+    "- don't capitalize first letter",
+    "- no dot \".\" at the end`"
+  ],
+  "showInvalidHeader": true,
+  "debug": false
+}
