@@ -1,0 +1,11 @@
+# Ignore artifacts:
+node_modules
+build
+coverage
+public
+README.md
+package-lock.json
+package.json
+.eslintrc.json
+.prettierrc.json
+docs
