@@ -62,9 +62,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier && npm run lint:fix",
-      "prepare-commit-msg": "devmoji -e --lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "devmoji -e --lint"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
