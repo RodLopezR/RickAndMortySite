@@ -9,3 +9,8 @@ package.json
 .eslintrc.json
 .prettierrc.json
 docs
+commitLint.js
+commitlinterrc.json
+src/react-app-env.d.ts
+src/reportWebVitals.ts
+tsconfig.json
