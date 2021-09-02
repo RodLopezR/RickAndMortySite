@@ -9,7 +9,11 @@ const Footer = () => {
           <div>Proyecto desarrollado con ReactJS, SASS, TypeScript.</div>
           <div>
             Desarrollado por{' '}
-            <a href="https://rodlopezr.github.io/" target="_blank">
+            <a
+              href="https://rodlopezr.github.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Rodrigo López
             </a>
           </div>
