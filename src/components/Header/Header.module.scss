@@ -1,0 +1,32 @@
+@import '../../sass/index.scss';
+
+.header {
+  header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: 100%;
+    height: $header_height;
+
+    .shadow {
+      background: linear-gradient($primary, gray);
+      opacity: 0.7;
+      width: 100%;
+      height: $header_height;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+    }
+
+    .header__container {
+      text-align: center;
+      padding-top: 30px;
+      position: relative;
+
+      .logo {
+        width: 400px;
+      }
+    }
+  }
+}

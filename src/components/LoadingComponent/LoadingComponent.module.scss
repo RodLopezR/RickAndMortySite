@@ -1,0 +1,13 @@
+@import '../../sass/index.scss';
+
+.loading {
+  text-align: center;
+  color: $white;
+  padding-top: 50px;
+
+  .circularProgress {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 20px;
+  }
+}

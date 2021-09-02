@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --ci --coverage --watchAll=false",
+    "test:watch": "react-scripts test --coverage --watchAll=true",
     "eject": "react-scripts eject",
     "prettier": "./node_modules/.bin/prettier --write ."
   },
@@ -16,8 +17,10 @@
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
     "dotenv": "^10.0.0",
+    "node-sass": "^4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-paginate": "^7.1.3",
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3"
   },
@@ -34,7 +37,6 @@
     "cypress": "^8.3.1",
     "history": "^5.0.1",
     "nock": "^13.1.3",
-    "node-sass": "^6.0.1",
     "prettier": "^2.3.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
@@ -56,5 +58,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!<rootDir>/src/index.tsx",
+      "!<rootDir>/src/reportWebVitals.ts",
+      "!<rootDir>/src/react-app-env.d.ts",
+      "!<rootDir>/src/types/**",
+      "!<rootDir>/src/**/*.snap"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": -10
+      }
+    }
   }
 }

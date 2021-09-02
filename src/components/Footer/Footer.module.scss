@@ -1,0 +1,33 @@
+@import '../../sass/index.scss';
+
+.footer {
+  width: 100%;
+  background-color: $primary;
+  height: $footer_height;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+  object-fit: cover;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: $primary;
+    opacity: 0.85;
+    width: 100%;
+    height: $footer_height;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  }
+
+  @include small {
+    padding: 5px !important;
+  }
+
+  .content {
+    position: relative;
+    text-align: center;
+  }
+}

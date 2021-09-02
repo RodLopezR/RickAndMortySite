@@ -1,0 +1,16 @@
+.info {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.pagination {
+  display: grid;
+  place-items: center center;
+  padding: 20px;
+
+  button {
+    color: white !important;
+    font-size: 20px;
+  }
+}

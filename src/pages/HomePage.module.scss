@@ -1,0 +1,5 @@
+@import '../sass/index.scss';
+
+.main__container {
+  min-height: calc(100vh - #{$footer_height} - #{$header_height} - 50px);
+}
