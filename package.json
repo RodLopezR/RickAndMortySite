@@ -64,6 +64,7 @@
       "!<rootDir>/src/index.tsx",
       "!<rootDir>/src/reportWebVitals.ts",
       "!<rootDir>/src/react-app-env.d.ts",
+      "!<rootDir>/src/__tests__/setupTests.ts",
       "!<rootDir>/src/types/**",
       "!<rootDir>/src/**/*.snap"
     ],
@@ -71,8 +72,7 @@
       "global": {
         "branches": 70,
         "functions": 70,
-        "lines": 70,
-        "statements": -10
+        "lines": 70
       }
     }
   }
